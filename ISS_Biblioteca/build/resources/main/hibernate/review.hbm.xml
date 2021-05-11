@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="domain">
+
+    <class name="Review" table="reviews">
+        <id name="id" column="id" type="int">
+            <generator class="org.hibernate.id.enhanced.SequenceStyleGenerator"/>
+        </id>
+        <property name = "text" column = "title" type = "string" />
+        <many-to-one name="userId" class="User"
+                     column="userId" not-null="true"
+                     cascade="all" />
+        <many-to-one name="exemplarId" class="Exemplar"
+                     column="exemplarId" not-null="true"
+                     cascade="all" />
+    </class>
+
+</hibernate-mapping>

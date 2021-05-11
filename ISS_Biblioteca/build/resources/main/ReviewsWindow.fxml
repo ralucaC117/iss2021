@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="281.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReviewsWindow">
+   <children>
+      <TableView layoutX="24.0" layoutY="26.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="90.20001220703125" text="Utilizator" />
+          <TableColumn prefWidth="108.79998779296875" text="Rating" />
+        </columns>
+      </TableView>
+      <TextArea layoutX="239.0" layoutY="26.0" prefHeight="200.0" prefWidth="320.0" promptText="Review text" />
+   </children>
+</AnchorPane>

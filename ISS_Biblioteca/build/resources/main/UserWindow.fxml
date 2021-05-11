@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="437.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserWindowController">
+  <tabs>
+    <Tab text="Exemplare Disponibile">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableViewExemplars" layoutX="96.0" layoutY="14.0" prefHeight="224.0" prefWidth="227.0">
+                    <columns>
+                      <TableColumn fx:id="columnIdExemplar" prefWidth="75.0" text="IDExemplar" />
+                      <TableColumn fx:id="columnTitle" prefWidth="75.0" text="Title" />
+                        <TableColumn fx:id="columnAuthor" prefWidth="75.0" text="Author" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="127.0" layoutY="287.0" mnemonicParsing="false" text="Adauga pentru imprumut" />
+                  <Button layoutX="147.0" layoutY="248.0" mnemonicParsing="false" text="Verifica review-uri" />
+                  <Button fx:id="nuttonLogOut" layoutX="362.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleButtonLogOut" text="Log Out" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Detalii imprumut curent">
+          <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="269.0" layoutY="303.0" mnemonicParsing="false" text="Finalizeaza imprumut" />
+                  <TableView layoutX="23.0" layoutY="14.0" prefHeight="200.0" prefWidth="375.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="IDExemplar" />
+                      <TableColumn prefWidth="75.0" text="Nume" />
+                        <TableColumn prefWidth="75.0" text="Autor" />
+                        <TableColumn prefWidth="75.0" text="Editura" />
+                        <TableColumn prefWidth="75.0" text="Aparitie" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="155.0" layoutY="225.0" mnemonicParsing="false" text="Elimina exemplar" />
+               </children></AnchorPane>
+          </content>
+      </Tab>
+    <Tab text="Istoric Imprumuturi">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="423.0">
+               <children>
+                  <TableView layoutX="11.0" layoutY="24.0" prefHeight="200.0" prefWidth="416.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="IDImprumut" />
+                      <TableColumn prefWidth="91.20001983642578" text="Data imprumut" />
+                        <TableColumn prefWidth="95.19998168945312" text="Data restituire" />
+                        <TableColumn prefWidth="75.0" text="Intarziere" />
+                        <TableColumn prefWidth="75.0" text="Status" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="148.0" layoutY="256.0" mnemonicParsing="false" text="Creeaza cerere de restituire" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="domain">
+
+    <class name="Exemplar" table="exemplars">
+        <id name="id" column="id" type="int">
+            <generator class="org.hibernate.id.enhanced.SequenceStyleGenerator"/>
+        </id>
+        <property name = "title" column = "title" type = "string" unique="true" />
+        <property name = "author" column = "author" type = "string" unique="true" />
+    </class>
+
+</hibernate-mapping>

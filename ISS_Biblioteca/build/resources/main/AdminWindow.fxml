@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="673.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OperatorWindowController">
+  <tabs>
+    <Tab text="Imprumuturi">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="794.0">
+               <children>
+                  <TableView layoutX="14.0" layoutY="20.0" prefHeight="200.0" prefWidth="645.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="IDCerere" />
+                      <TableColumn prefWidth="114.20001220703125" text="Nume abonat" />
+                        <TableColumn prefWidth="114.20001220703125" text="Telefon" />
+                        <TableColumn prefWidth="114.20001220703125" text="Intarziere" />
+                        <TableColumn prefWidth="114.20001220703125" text="Suma de platit" />
+                        <TableColumn prefWidth="114.20001220703125" text="Status imprumut" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="24.0" layoutY="250.0" mnemonicParsing="false" text="Confirma restituire" />
+                  <Button fx:id="buttonLogOut" layoutX="461.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleButtonLogOut" text="Log Out" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
