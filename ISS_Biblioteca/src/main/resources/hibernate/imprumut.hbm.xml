@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="domain">
+
+    <class name="Imprumut" table="imprumuturi">
+        <id name="id" column="id" type="int">
+            <generator class="org.hibernate.id.enhanced.SequenceStyleGenerator"/>
+        </id>
+        <many-to-one name="user" class="User"
+                     column="userId" not-null="true"
+                     cascade="all" />
+        <list name="exemplare" cascade="all" inverse="true" lazy="false" fetch="select" >
+            <key column="imprumutId"/>
+            <index column="type"/>
+            <one-to-many class="Exemplar"/>
+
+        </list>
+        <property name = "date" column = "date"  />
+    </class>
+
+    <class name="Exemplar" table="exemplars">
+        <id name="id" column="id" type="int">
+            <generator class="org.hibernate.id.enhanced.SequenceStyleGenerator"/>
+        </id>
+        <property name = "title" column = "title" type = "string" unique="true" />
+        <property name = "author" column = "author" type = "string" unique="true" />
+    </class>
+
+    <class name="User" table="users">
+        <id name="id" column="id" type="int">
+            <generator class="org.hibernate.id.enhanced.SequenceStyleGenerator"/>
+        </id>
+        <property name = "name" column = "name" type = "string"  />
+        <property name = "cnp" column = "cnp" type = "string" unique="true" />
+        <property name = "password" column = "password" type = "string" />
+        <property name = "telephoneNumber" column = "telephoneNumber" type = "string"  />
+        <property name = "email" column = "email" type = "string"  />
+    </class>
+
+
+</hibernate-mapping>

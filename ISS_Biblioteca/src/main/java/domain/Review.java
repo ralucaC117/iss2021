@@ -2,13 +2,17 @@ package domain;
 
 public class Review extends Entity<Integer>{
     private String text;
-    private Integer userId;
-    private Integer exemplarId;
+    private User userId;
+    private Exemplar exemplarId;
 
-    public Review(String text, Integer userId, Integer exemplarId) {
+    public Review(String text, User userId, Exemplar exemplarId) {
         this.text = text;
         this.userId = userId;
         this.exemplarId = exemplarId;
+    }
+
+    public Review(){
+
     }
 
     public String getText() {
@@ -19,19 +23,19 @@ public class Review extends Entity<Integer>{
         this.text = text;
     }
 
-    public Integer getUserId() {
+    public User getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(User userId) {
         this.userId = userId;
     }
 
-    public Integer getExemplarId() {
+    public Exemplar getExemplarId() {
         return exemplarId;
     }
 
-    public void setExemplarId(Integer exemplarId) {
+    public void setExemplarId(Exemplar exemplarId) {
         this.exemplarId = exemplarId;
     }
 }

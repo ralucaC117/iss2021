@@ -13,10 +13,12 @@
         <property name = "text" column = "title" type = "string" />
         <many-to-one name="userId" class="User"
                      column="userId" not-null="true"
-                     cascade="all" />
+                     cascade="all"
+                     lazy="false" fetch="select" />
         <many-to-one name="exemplarId" class="Exemplar"
                      column="exemplarId" not-null="true"
-                     cascade="all" />
+                     cascade="all"
+                     lazy="false" fetch="select"/>
     </class>
 
 </hibernate-mapping>

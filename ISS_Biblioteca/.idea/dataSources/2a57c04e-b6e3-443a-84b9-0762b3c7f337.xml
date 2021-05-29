@@ -53,14 +53,14 @@ false Africa/Blantyre
 false Africa/Brazzaville
 false Africa/Bujumbura
 false Africa/Cairo
-true Africa/Casablanca
+false Africa/Casablanca
 true Africa/Ceuta
 false Africa/Conakry
 false Africa/Dakar
 false Africa/Dar_es_Salaam
 false Africa/Djibouti
 false Africa/Douala
-true Africa/El_Aaiun
+false Africa/El_Aaiun
 false Africa/Freetown
 false Africa/Gaborone
 false Africa/Harare
@@ -792,7 +792,7 @@ false YEKT
 false Z
 false Zulu
 </TimeZones>
-      <StartupTime>1620735142</StartupTime>
+      <StartupTime>1621962211</StartupTime>
     </root>
     <database id="2" parent="1" name="Books">
       <ObjectId>16394</ObjectId>
@@ -807,42 +807,46 @@ false Zulu
 13158||-9223372036854775808|U|G
 13158||10|U|G</Grants>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>541</IntrospectionStateNumber>
+      <IntrospectionStateNumber>658</IntrospectionStateNumber>
       <Current>1</Current>
     </database>
-    <database id="3" parent="1" name="postgres">
+    <database id="3" parent="1" name="Practice">
+      <ObjectId>16519</ObjectId>
+      <Owner>postgres</Owner>
+    </database>
+    <database id="4" parent="1" name="postgres">
       <ObjectId>13442</ObjectId>
       <Comment>default administrative connection database</Comment>
       <Owner>postgres</Owner>
     </database>
-    <role id="4" parent="1" name="pg_execute_server_program">
+    <role id="5" parent="1" name="pg_execute_server_program">
       <ObjectId>4571</ObjectId>
     </role>
-    <role id="5" parent="1" name="pg_monitor">
+    <role id="6" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
       <RoleGrants>3374
 3375
 3377</RoleGrants>
     </role>
-    <role id="6" parent="1" name="pg_read_all_settings">
+    <role id="7" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
     </role>
-    <role id="7" parent="1" name="pg_read_all_stats">
+    <role id="8" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
     </role>
-    <role id="8" parent="1" name="pg_read_server_files">
+    <role id="9" parent="1" name="pg_read_server_files">
       <ObjectId>4569</ObjectId>
     </role>
-    <role id="9" parent="1" name="pg_signal_backend">
+    <role id="10" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="10" parent="1" name="pg_stat_scan_tables">
+    <role id="11" parent="1" name="pg_stat_scan_tables">
       <ObjectId>3377</ObjectId>
     </role>
-    <role id="11" parent="1" name="pg_write_server_files">
+    <role id="12" parent="1" name="pg_write_server_files">
       <ObjectId>4570</ObjectId>
     </role>
-    <role id="12" parent="1" name="postgres">
+    <role id="13" parent="1" name="postgres">
       <ObjectId>10</ObjectId>
       <SuperRole>1</SuperRole>
       <CreateDb>1</CreateDb>
@@ -851,36 +855,36 @@ false Zulu
       <Replication>1</Replication>
       <BypassRls>1</BypassRls>
     </role>
-    <tablespace id="13" parent="1" name="pg_default">
+    <tablespace id="14" parent="1" name="pg_default">
       <ObjectId>1663</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1</StateNumber>
     </tablespace>
-    <tablespace id="14" parent="1" name="pg_global">
+    <tablespace id="15" parent="1" name="pg_global">
       <ObjectId>1664</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>1</StateNumber>
     </tablespace>
-    <schema id="15" parent="2" name="information_schema">
+    <schema id="16" parent="2" name="information_schema">
       <ObjectId>13158</ObjectId>
       <StateNumber>293</StateNumber>
       <Owner>postgres</Owner>
     </schema>
-    <schema id="16" parent="2" name="pg_catalog">
+    <schema id="17" parent="2" name="pg_catalog">
       <ObjectId>11</ObjectId>
       <Comment>system catalog schema</Comment>
       <StateNumber>286</StateNumber>
       <Owner>postgres</Owner>
     </schema>
-    <schema id="17" parent="2" name="public">
+    <schema id="18" parent="2" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
       <StateNumber>287</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>542</IntrospectionStateNumber>
+      <IntrospectionStateNumber>659</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
-    <extension id="18" parent="2" name="plpgsql">
+    <extension id="19" parent="2" name="plpgsql">
       <ObjectId>13428</ObjectId>
       <Comment>PL/pgSQL procedural language</Comment>
       <StateNumber>439</StateNumber>
@@ -888,21 +892,21 @@ false Zulu
       <SchemaName>pg_catalog</SchemaName>
       <SchemaId>11</SchemaId>
     </extension>
-    <language id="19" parent="2" name="c">
+    <language id="20" parent="2" name="c">
       <ObjectId>13</ObjectId>
       <Comment>dynamically-loaded C functions</Comment>
       <StateNumber>1</StateNumber>
       <ValidatorName>fmgr_c_validator</ValidatorName>
       <ValidatorSchema>pg_catalog</ValidatorSchema>
     </language>
-    <language id="20" parent="2" name="internal">
+    <language id="21" parent="2" name="internal">
       <ObjectId>12</ObjectId>
       <Comment>built-in functions</Comment>
       <StateNumber>1</StateNumber>
       <ValidatorName>fmgr_internal_validator</ValidatorName>
       <ValidatorSchema>pg_catalog</ValidatorSchema>
     </language>
-    <language id="21" parent="2" name="plpgsql">
+    <language id="22" parent="2" name="plpgsql">
       <ObjectId>13432</ObjectId>
       <Comment>PL/pgSQL procedural language</Comment>
       <StateNumber>439</StateNumber>
@@ -914,7 +918,7 @@ false Zulu
       <ValidatorName>plpgsql_validator</ValidatorName>
       <ValidatorSchema>pg_catalog</ValidatorSchema>
     </language>
-    <language id="22" parent="2" name="sql">
+    <language id="23" parent="2" name="sql">
       <ObjectId>14</ObjectId>
       <Comment>SQL-language functions</Comment>
       <StateNumber>1</StateNumber>
@@ -922,14 +926,14 @@ false Zulu
       <ValidatorName>fmgr_sql_validator</ValidatorName>
       <ValidatorSchema>pg_catalog</ValidatorSchema>
     </language>
-    <access-method id="23" parent="2" name="heap">
+    <access-method id="24" parent="2" name="heap">
       <ObjectId>2</ObjectId>
       <Comment>heap table access method</Comment>
       <StateNumber>1</StateNumber>
       <Handler>pg_catalog.heap_tableam_handler</Handler>
       <HandlerId>3</HandlerId>
     </access-method>
-    <access-method id="24" parent="2" name="btree">
+    <access-method id="25" parent="2" name="btree">
       <ObjectId>403</ObjectId>
       <Comment>b-tree index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -937,7 +941,7 @@ false Zulu
       <HandlerId>330</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="25" parent="2" name="hash">
+    <access-method id="26" parent="2" name="hash">
       <ObjectId>405</ObjectId>
       <Comment>hash index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -945,7 +949,7 @@ false Zulu
       <HandlerId>331</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="26" parent="2" name="gist">
+    <access-method id="27" parent="2" name="gist">
       <ObjectId>783</ObjectId>
       <Comment>GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -953,7 +957,7 @@ false Zulu
       <HandlerId>332</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="27" parent="2" name="gin">
+    <access-method id="28" parent="2" name="gin">
       <ObjectId>2742</ObjectId>
       <Comment>GIN index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -961,7 +965,7 @@ false Zulu
       <HandlerId>333</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="28" parent="2" name="spgist">
+    <access-method id="29" parent="2" name="spgist">
       <ObjectId>4000</ObjectId>
       <Comment>SP-GiST index access method</Comment>
       <StateNumber>1</StateNumber>
@@ -969,7 +973,7 @@ false Zulu
       <HandlerId>334</HandlerId>
       <Type>index</Type>
     </access-method>
-    <access-method id="29" parent="2" name="brin">
+    <access-method id="30" parent="2" name="brin">
       <ObjectId>3580</ObjectId>
       <Comment>block range index (BRIN) access method</Comment>
       <StateNumber>1</StateNumber>
@@ -977,54 +981,71 @@ false Zulu
       <HandlerId>335</HandlerId>
       <Type>index</Type>
     </access-method>
-    <sequence id="30" parent="17" name="hibernate_sequence">
-      <ObjectId>16469</ObjectId>
+    <sequence id="31" parent="18" name="hibernate_sequence">
+      <ObjectId>16554</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>530</StateNumber>
+      <StateNumber>576</StateNumber>
       <DataType>bigint|0s</DataType>
     </sequence>
-    <table id="31" parent="17" name="exemplars">
-      <ObjectId>16471</ObjectId>
+    <table id="32" parent="18" name="exemplars">
+      <ObjectId>16618</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>540</StateNumber>
+      <StateNumber>653</StateNumber>
     </table>
-    <table id="32" parent="17" name="operators">
-      <ObjectId>16479</ObjectId>
+    <table id="33" parent="18" name="imprumuturi">
+      <ObjectId>16626</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>532</StateNumber>
+      <StateNumber>653</StateNumber>
     </table>
-    <table id="33" parent="17" name="reviews">
-      <ObjectId>16487</ObjectId>
+    <table id="34" parent="18" name="operators">
+      <ObjectId>16631</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>539</StateNumber>
+      <StateNumber>642</StateNumber>
     </table>
-    <table id="34" parent="17" name="users">
-      <ObjectId>16492</ObjectId>
+    <table id="35" parent="18" name="reviews">
+      <ObjectId>16639</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>539</StateNumber>
+      <StateNumber>655</StateNumber>
     </table>
-    <column id="35" parent="31" name="id">
+    <table id="36" parent="18" name="users">
+      <ObjectId>16644</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>654</StateNumber>
+    </table>
+    <column id="37" parent="32" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>531</StateNumber>
+      <StateNumber>640</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="36" parent="31" name="title">
+    <column id="38" parent="32" name="title">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>531</StateNumber>
+      <StateNumber>640</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="37" parent="31" name="author">
+    <column id="39" parent="32" name="author">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>531</StateNumber>
+      <StateNumber>640</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="38" parent="31" name="exemplars_pkey">
-      <ObjectId>16477</ObjectId>
-      <StateNumber>531</StateNumber>
+    <column id="40" parent="32" name="imprumutid">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>640</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="41" parent="32" name="type">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>640</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="42" parent="32" name="exemplars_pkey">
+      <ObjectId>16624</ObjectId>
+      <StateNumber>640</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1032,9 +1053,9 @@ false Zulu
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="39" parent="31" name="uk_m5n5bod33o8av5t9huwumy43d">
-      <ObjectId>16500</ObjectId>
-      <StateNumber>535</StateNumber>
+    <index id="43" parent="32" name="uk_m5n5bod33o8av5t9huwumy43d">
+      <ObjectId>16652</ObjectId>
+      <StateNumber>646</StateNumber>
       <ColNames>title</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
@@ -1042,9 +1063,9 @@ false Zulu
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <index id="40" parent="31" name="uk_gjthwsmek2pvmb4j45lnvgth0">
-      <ObjectId>16502</ObjectId>
-      <StateNumber>536</StateNumber>
+    <index id="44" parent="32" name="uk_gjthwsmek2pvmb4j45lnvgth0">
+      <ObjectId>16654</ObjectId>
+      <StateNumber>648</StateNumber>
       <ColNames>author</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
@@ -1052,47 +1073,58 @@ false Zulu
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <key id="41" parent="31" name="exemplars_pkey">
-      <ObjectId>16478</ObjectId>
-      <StateNumber>531</StateNumber>
+    <key id="45" parent="32" name="exemplars_pkey">
+      <ObjectId>16625</ObjectId>
+      <StateNumber>640</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>exemplars_pkey</UnderlyingIndexName>
     </key>
-    <key id="42" parent="31" name="uk_m5n5bod33o8av5t9huwumy43d">
-      <ObjectId>16501</ObjectId>
-      <StateNumber>535</StateNumber>
+    <key id="46" parent="32" name="uk_m5n5bod33o8av5t9huwumy43d">
+      <ObjectId>16653</ObjectId>
+      <StateNumber>646</StateNumber>
       <ColNames>title</ColNames>
       <UnderlyingIndexName>uk_m5n5bod33o8av5t9huwumy43d</UnderlyingIndexName>
     </key>
-    <key id="43" parent="31" name="uk_gjthwsmek2pvmb4j45lnvgth0">
-      <ObjectId>16503</ObjectId>
-      <StateNumber>536</StateNumber>
+    <key id="47" parent="32" name="uk_gjthwsmek2pvmb4j45lnvgth0">
+      <ObjectId>16655</ObjectId>
+      <StateNumber>648</StateNumber>
       <ColNames>author</ColNames>
       <UnderlyingIndexName>uk_gjthwsmek2pvmb4j45lnvgth0</UnderlyingIndexName>
     </key>
-    <column id="44" parent="32" name="id">
+    <foreign-key id="48" parent="32" name="fkmroq9h988uni9qmtd6bpmsgw9">
+      <ObjectId>16660</ObjectId>
+      <StateNumber>653</StateNumber>
+      <ColNames>imprumutid</ColNames>
+      <RefTableId>16626</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>imprumuturi</RefTableName>
+      <RefKeyName>imprumuturi_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="49" parent="33" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>532</StateNumber>
+      <StateNumber>641</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="45" parent="32" name="cnp">
+    <column id="50" parent="33" name="userid">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>532</StateNumber>
-      <TypeId>1043</TypeId>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>641</StateNumber>
+      <TypeId>23</TypeId>
     </column>
-    <column id="46" parent="32" name="password">
+    <column id="51" parent="33" name="date">
       <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>532</StateNumber>
-      <TypeId>1043</TypeId>
+      <DataType>date|0s</DataType>
+      <StateNumber>641</StateNumber>
+      <TypeId>1082</TypeId>
     </column>
-    <index id="47" parent="32" name="operators_pkey">
-      <ObjectId>16485</ObjectId>
-      <StateNumber>532</StateNumber>
+    <index id="52" parent="33" name="imprumuturi_pkey">
+      <ObjectId>16629</ObjectId>
+      <StateNumber>641</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1100,133 +1132,45 @@ false Zulu
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="48" parent="32" name="uk_3h79uqfa9mtevy9igyih2g3x4">
-      <ObjectId>16504</ObjectId>
-      <StateNumber>537</StateNumber>
-      <ColNames>cnp</ColNames>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>100</CollationIds>
-      <CollationNames>default</CollationNames>
-      <ClassIds>3126</ClassIds>
-    </index>
-    <key id="49" parent="32" name="operators_pkey">
-      <ObjectId>16486</ObjectId>
-      <StateNumber>532</StateNumber>
+    <key id="53" parent="33" name="imprumuturi_pkey">
+      <ObjectId>16630</ObjectId>
+      <StateNumber>641</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
-      <UnderlyingIndexName>operators_pkey</UnderlyingIndexName>
+      <UnderlyingIndexName>imprumuturi_pkey</UnderlyingIndexName>
     </key>
-    <key id="50" parent="32" name="uk_3h79uqfa9mtevy9igyih2g3x4">
-      <ObjectId>16505</ObjectId>
-      <StateNumber>537</StateNumber>
-      <ColNames>cnp</ColNames>
-      <UnderlyingIndexName>uk_3h79uqfa9mtevy9igyih2g3x4</UnderlyingIndexName>
-    </key>
-    <column id="51" parent="33" name="id">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>533</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="52" parent="33" name="title">
-      <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>533</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="53" parent="33" name="userid">
-      <Position>3</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>533</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="54" parent="33" name="exemplarid">
-      <Position>4</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>533</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <index id="55" parent="33" name="reviews_pkey">
-      <ObjectId>16490</ObjectId>
-      <StateNumber>533</StateNumber>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-      <Primary>1</Primary>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-    </index>
-    <key id="56" parent="33" name="reviews_pkey">
-      <ObjectId>16491</ObjectId>
-      <StateNumber>533</StateNumber>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>reviews_pkey</UnderlyingIndexName>
-    </key>
-    <foreign-key id="57" parent="33" name="fkkdo10i2psd58tkubw6wovrnec">
-      <ObjectId>16508</ObjectId>
-      <StateNumber>539</StateNumber>
+    <foreign-key id="54" parent="33" name="fkehgsitmb0uhoa9ncwk7mc2fx">
+      <ObjectId>16665</ObjectId>
+      <StateNumber>654</StateNumber>
       <ColNames>userid</ColNames>
-      <RefTableId>16492</RefTableId>
+      <RefTableId>16644</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>users</RefTableName>
       <RefKeyName>users_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="58" parent="33" name="fkns74qqf8iohqsf65kqmcc92wy">
-      <ObjectId>16513</ObjectId>
-      <StateNumber>540</StateNumber>
-      <ColNames>exemplarid</ColNames>
-      <RefTableId>16471</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>exemplars</RefTableName>
-      <RefKeyName>exemplars_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="59" parent="34" name="id">
+    <column id="55" parent="34" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>534</StateNumber>
+      <StateNumber>642</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="60" parent="34" name="name">
+    <column id="56" parent="34" name="cnp">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>534</StateNumber>
+      <StateNumber>642</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="61" parent="34" name="cnp">
+    <column id="57" parent="34" name="password">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <StateNumber>534</StateNumber>
+      <StateNumber>642</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="62" parent="34" name="password">
-      <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>534</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="63" parent="34" name="telephonenumber">
-      <Position>5</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>534</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="64" parent="34" name="email">
-      <Position>6</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <StateNumber>534</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="65" parent="34" name="users_pkey">
-      <ObjectId>16498</ObjectId>
-      <StateNumber>534</StateNumber>
+    <index id="58" parent="34" name="operators_pkey">
+      <ObjectId>16637</ObjectId>
+      <StateNumber>642</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
@@ -1234,9 +1178,9 @@ false Zulu
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="66" parent="34" name="uk_qlduvbot0drgmmv5oe1lauix0">
-      <ObjectId>16506</ObjectId>
-      <StateNumber>538</StateNumber>
+    <index id="59" parent="34" name="uk_3h79uqfa9mtevy9igyih2g3x4">
+      <ObjectId>16656</ObjectId>
+      <StateNumber>650</StateNumber>
       <ColNames>cnp</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
@@ -1244,16 +1188,150 @@ false Zulu
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <key id="67" parent="34" name="users_pkey">
-      <ObjectId>16499</ObjectId>
-      <StateNumber>534</StateNumber>
+    <key id="60" parent="34" name="operators_pkey">
+      <ObjectId>16638</ObjectId>
+      <StateNumber>642</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>operators_pkey</UnderlyingIndexName>
+    </key>
+    <key id="61" parent="34" name="uk_3h79uqfa9mtevy9igyih2g3x4">
+      <ObjectId>16657</ObjectId>
+      <StateNumber>650</StateNumber>
+      <ColNames>cnp</ColNames>
+      <UnderlyingIndexName>uk_3h79uqfa9mtevy9igyih2g3x4</UnderlyingIndexName>
+    </key>
+    <column id="62" parent="35" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>643</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="63" parent="35" name="title">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>643</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="64" parent="35" name="userid">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>643</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="65" parent="35" name="exemplarid">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>643</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="66" parent="35" name="reviews_pkey">
+      <ObjectId>16642</ObjectId>
+      <StateNumber>643</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <key id="67" parent="35" name="reviews_pkey">
+      <ObjectId>16643</ObjectId>
+      <StateNumber>643</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>reviews_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="68" parent="35" name="fkkdo10i2psd58tkubw6wovrnec">
+      <ObjectId>16670</ObjectId>
+      <StateNumber>655</StateNumber>
+      <ColNames>userid</ColNames>
+      <RefTableId>16644</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>users</RefTableName>
+      <RefKeyName>users_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="69" parent="35" name="fkns74qqf8iohqsf65kqmcc92wy">
+      <ObjectId>16675</ObjectId>
+      <StateNumber>656</StateNumber>
+      <ColNames>exemplarid</ColNames>
+      <RefTableId>16618</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>exemplars</RefTableName>
+      <RefKeyName>exemplars_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="70" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>644</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="71" parent="36" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>644</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="72" parent="36" name="cnp">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>644</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="73" parent="36" name="password">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>644</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="74" parent="36" name="telephonenumber">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>644</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="75" parent="36" name="email">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>644</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="76" parent="36" name="users_pkey">
+      <ObjectId>16650</ObjectId>
+      <StateNumber>644</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <index id="77" parent="36" name="uk_qlduvbot0drgmmv5oe1lauix0">
+      <ObjectId>16658</ObjectId>
+      <StateNumber>652</StateNumber>
+      <ColNames>cnp</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>3126</ClassIds>
+    </index>
+    <key id="78" parent="36" name="users_pkey">
+      <ObjectId>16651</ObjectId>
+      <StateNumber>644</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
     </key>
-    <key id="68" parent="34" name="uk_qlduvbot0drgmmv5oe1lauix0">
-      <ObjectId>16507</ObjectId>
-      <StateNumber>538</StateNumber>
+    <key id="79" parent="36" name="uk_qlduvbot0drgmmv5oe1lauix0">
+      <ObjectId>16659</ObjectId>
+      <StateNumber>652</StateNumber>
       <ColNames>cnp</ColNames>
       <UnderlyingIndexName>uk_qlduvbot0drgmmv5oe1lauix0</UnderlyingIndexName>
     </key>

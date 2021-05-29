@@ -16,8 +16,8 @@
                         <TableColumn fx:id="columnAuthor" prefWidth="75.0" text="Author" />
                     </columns>
                   </TableView>
-                  <Button layoutX="127.0" layoutY="287.0" mnemonicParsing="false" text="Adauga pentru imprumut" />
-                  <Button layoutX="147.0" layoutY="248.0" mnemonicParsing="false" text="Verifica review-uri" />
+                  <Button layoutX="150.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleButtonAdaugaPentruImprumut" text="Adauga pentru imprumut" />
+                  <Button fx:id="buttonReviews" layoutX="163.0" layoutY="248.0" mnemonicParsing="false" onAction="#handleButtonReviews" text="Verifica review-uri" />
                   <Button fx:id="nuttonLogOut" layoutX="362.0" layoutY="319.0" mnemonicParsing="false" onAction="#handleButtonLogOut" text="Log Out" />
                </children></AnchorPane>
       </content>
@@ -26,17 +26,15 @@
           <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                <children>
-                  <Button layoutX="269.0" layoutY="303.0" mnemonicParsing="false" text="Finalizeaza imprumut" />
-                  <TableView layoutX="23.0" layoutY="14.0" prefHeight="200.0" prefWidth="375.0">
+                  <Button fx:id="buttonFinalizeazaImprumut" layoutX="269.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleButtonFinalizeazaImprumut" text="Finalizeaza imprumut" />
+                  <TableView fx:id="tableViewExemplareImprumut" layoutX="51.0" layoutY="25.0" prefHeight="200.0" prefWidth="336.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="IDExemplar" />
-                      <TableColumn prefWidth="75.0" text="Nume" />
-                        <TableColumn prefWidth="75.0" text="Autor" />
-                        <TableColumn prefWidth="75.0" text="Editura" />
-                        <TableColumn prefWidth="75.0" text="Aparitie" />
+                      <TableColumn fx:id="columnIdExemplarImprumut" prefWidth="106.20000076293945" text="IDExemplar" />
+                      <TableColumn fx:id="columnNumeExemplarImprumut" prefWidth="101.80000305175781" text="Nume" />
+                        <TableColumn fx:id="columnAutorExemplarImprumut" prefWidth="126.40000915527344" text="Autor" />
                     </columns>
                   </TableView>
-                  <Button layoutX="155.0" layoutY="225.0" mnemonicParsing="false" text="Elimina exemplar" />
+                  <Button fx:id="buttonEliminaExemplar" layoutX="155.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleButtonEliminaExemplar" prefHeight="20.0" prefWidth="106.0" text="Elimina exemplar" />
                </children></AnchorPane>
           </content>
       </Tab>
@@ -44,13 +42,11 @@
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="423.0">
                <children>
-                  <TableView layoutX="11.0" layoutY="24.0" prefHeight="200.0" prefWidth="416.0">
+                  <TableView fx:id="tableViewImprumuturi" layoutX="37.0" layoutY="28.0" prefHeight="200.0" prefWidth="364.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="IDImprumut" />
-                      <TableColumn prefWidth="91.20001983642578" text="Data imprumut" />
-                        <TableColumn prefWidth="95.19998168945312" text="Data restituire" />
-                        <TableColumn prefWidth="75.0" text="Intarziere" />
-                        <TableColumn prefWidth="75.0" text="Status" />
+                      <TableColumn fx:id="columnIdImprumut" prefWidth="114.19999408721924" text="IDImprumut" />
+                      <TableColumn fx:id="columnDataImprumut" prefWidth="132.20001220703125" text="Data imprumut" />
+                        <TableColumn fx:id="columnDataRestituire" prefWidth="117.80003356933594" text="Data restituire" />
                     </columns>
                   </TableView>
                   <Button layoutX="148.0" layoutY="256.0" mnemonicParsing="false" text="Creeaza cerere de restituire" />

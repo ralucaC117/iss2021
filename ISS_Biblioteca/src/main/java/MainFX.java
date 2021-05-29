@@ -44,8 +44,9 @@ public class MainFX extends Application {
         UsersRepository usersRepository = new UsersRepository(sessionFactory);
         OperatorsRepository operatorsRepository = new OperatorsRepository(sessionFactory);
         ExemplarsRepository exemplarsRepository = new ExemplarsRepository(sessionFactory);
-        ReviewsRepository reviewsRepository = new ReviewsRepository();
-        Service service = new Service(usersRepository, operatorsRepository, reviewsRepository, exemplarsRepository);
+        ReviewsRepository reviewsRepository = new ReviewsRepository(sessionFactory);
+        ImprumuturiRepository imprumuturiRepository = new ImprumuturiRepository(sessionFactory);
+        Service service = new Service(usersRepository, operatorsRepository, reviewsRepository, exemplarsRepository, imprumuturiRepository);
         return service;
 
     }

@@ -3,15 +3,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane prefHeight="281.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReviewsWindow">
+<AnchorPane prefHeight="281.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReviewsController">
    <children>
-      <TableView layoutX="24.0" layoutY="26.0" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tableViewReviews" layoutX="24.0" layoutY="26.0" onMouseClicked="#handleSeeReview" prefHeight="200.0" prefWidth="92.0">
         <columns>
-          <TableColumn prefWidth="90.20001220703125" text="Utilizator" />
-          <TableColumn prefWidth="108.79998779296875" text="Rating" />
+          <TableColumn fx:id="columnUserName" prefWidth="90.20001220703125" text="Utilizator" />
         </columns>
       </TableView>
-      <TextArea layoutX="239.0" layoutY="26.0" prefHeight="200.0" prefWidth="320.0" promptText="Review text" />
+      <TextArea fx:id="textReview" layoutX="128.0" layoutY="26.0" prefHeight="110.0" prefWidth="249.0" promptText="Review text" />
+      <TextArea fx:id="textMyReview" layoutX="128.0" layoutY="150.0" prefHeight="86.0" prefWidth="250.0" promptText="Your review" />
+      <Button fx:id="buttonPostReview" layoutX="389.0" layoutY="213.0" mnemonicParsing="false" onAction="#handleButtonPostReview" text="Post review" />
+      <Button fx:id="buttonBack" layoutX="447.0" layoutY="241.0" mnemonicParsing="false" onAction="#handleButtonBack" text="Back" />
    </children>
 </AnchorPane>

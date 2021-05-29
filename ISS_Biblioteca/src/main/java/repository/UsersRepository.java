@@ -1,5 +1,6 @@
 package repository;
 
+import domain.Exemplar;
 import domain.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -32,8 +33,26 @@ public class UsersRepository implements IRepository<Integer, User> {
         return user;
     }
     @Override
-    public User findOne(Integer integer) {
-        return null;
+    public User findOne(Integer id) {
+        User user = null;
+
+        try(Session session = sessionFactory.openSession())
+        {
+
+            Transaction tx=null;
+            try
+            {
+                tx = session.beginTransaction();
+                user = session.createQuery("FROM User WHERE id = "+id, User.class).setMaxResults(1).uniqueResult();
+                tx.commit();
+            }
+            catch(RuntimeException ex)
+            {
+                if (tx!=null)
+                    tx.rollback();
+            }
+        }
+        return user;
     }
 
     @Override

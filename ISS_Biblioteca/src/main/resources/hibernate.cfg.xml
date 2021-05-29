@@ -14,10 +14,11 @@
         <property name="hbm2ddl.auto">update</property>
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
-        <!--        <property name="format_sql">true</property>-->
+<!--                <property name="format_sql">true</property>-->
         <mapping resource="hibernate/operator.hbm.xml"/>
-        <mapping resource="hibernate/user.hbm.xml"/>
-        <mapping resource="hibernate/exemplar.hbm.xml"/>
+<!--        <mapping resource="hibernate/user.hbm.xml"/>-->
+<!--        <mapping resource="hibernate/exemplar.hbm.xml"/>-->
         <mapping resource="hibernate/review.hbm.xml"/>
+        <mapping resource="hibernate/imprumut.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

@@ -8,7 +8,7 @@
    <children>
       <Button fx:id="buttonLogInUser" layoutX="97.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleButtonLogInUser" text="Log in" />
       <PasswordField fx:id="textBoxPassword" layoutX="107.0" layoutY="130.0" promptText="password" />
-      <TextField fx:id="textBoxCnp" layoutX="107.0" layoutY="92.0" promptText="cnp" />
+      <TextField fx:id="textBoxCnp" layoutX="107.0" layoutY="87.0" promptText="cnp" />
       <Text fill="#716a6a" layoutX="52.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistem de gestionare al bibliotecii" textAlignment="CENTER">
          <font>
             <Font name="System Italic" size="18.0" />
